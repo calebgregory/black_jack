@@ -1,0 +1,23 @@
+{
+  "name": "black_jack",
+  "version": "1.0.0",
+  "homepage": "https://github.com/calebgregory/black_jack",
+  "authors": [
+    "calebgregory <calebgregory@gmail.com>"
+  ],
+  "description": "A simple Blackjack game",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "~2.1.4",
+    "foundation": "~5.5.2",
+    "lodash": "~3.8.0"
+  }
+}
