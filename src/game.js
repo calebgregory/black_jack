@@ -339,7 +339,7 @@ function gameSq() {
 
     } else {
 
-      console.log('You lost.');
+      console.log('You lost.\nPlay again? \'y\' or \'n\'');
       rl.question('play again? y or n\n', function(answer) {
 
         switch(answer) {
@@ -364,19 +364,20 @@ function gameSq() {
 
 
 function quit() {
-  console.log('#= ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ =#',
-              '#=                                         =#',
-              '#=      C O N G R A T U L A T I O N S      =#',
-              '#=                                         =#',
-              '#=         You have beat the game!         =#',
-              '#=                                         =#',
-              '#=     Now go enjoy a walk outside and     =#',
-              '#=     feel as much as you can the         =#',
-              '#=     passage of the outside air into     =#',
-              '#=     your fleshy lungs.                  =#',
-              '#=                                         =#',
-              '#=                                         =#',
-              '#= ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ =#'.rainbow);
+  console.log([ '#= ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ =#',
+                '#=                                         =#',
+                '#=      C O N G R A T U L A T I O N S      =#',
+                '#=                                         =#',
+                '#=         You have beat the game!         =#',
+                '#=                                         =#',
+                '#=     Now go enjoy a walk outside and     =#',
+                '#=     feel as much as you can the         =#',
+                '#=     passage of the outside air into     =#',
+                '#=     your fleshy lungs.                  =#',
+                '#=                                         =#',
+                '#=                                         =#',
+                '#= ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ =#'
+              ].join('\n').rainbow);
   process.exit(0);
 }
 
